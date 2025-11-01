@@ -28,7 +28,7 @@ class CheckoutPage {
     }
 
     calendario() {
-        return cy.get(':nth-child(5) > .react-datepicker__day--029')
+        return cy.get('.react-datepicker__day--015')
     }
 
     botonDeTarjeta() {
