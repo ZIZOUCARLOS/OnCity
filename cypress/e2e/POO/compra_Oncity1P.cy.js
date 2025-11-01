@@ -47,7 +47,7 @@ describe('Flujo completo: Carrito + Checkout con pausa manual', () => {
   //   carrito.validarUrlCheckout()
 
   //   // --- Paso 2: Agregar SKU ---
-  //   carrito.agregarSkuAlCarrito("48222, 53079 ")
+  //   carrito.agregarSkuAlCarrito("53078, 53079 ")
   //   // 53079
 
   //   // --- Paso 3: Finalizar compra desde el carrito ---
@@ -63,5 +63,6 @@ describe('Flujo completo: Carrito + Checkout con pausa manual', () => {
 
   //   // --- Paso 6: Finalizar pedido ---
   //   checkout.finalizar()
+  //   checkout.mensajehello()
   // });
   })
