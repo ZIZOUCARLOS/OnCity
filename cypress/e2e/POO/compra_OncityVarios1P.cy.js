@@ -6,13 +6,13 @@ describe('Flujo completo: Carrito + Checkout con pausa manual', () => {
   const carrito = new CarritoPage()
   const checkout = new CheckoutPage()
 
-  it('Flujo de compra con un producto 1p', () => {
-    // --- Paso 1: Navegar al carrito ---
+  it('Flujo de compras varios productos 1p', () => {
+      // --- Paso 1: Navegar al carrito ---
     carrito.navegar()
     carrito.validarUrlCheckout()
 
     // --- Paso 2: Agregar SKU ---
-    carrito.agregarSkuAlCarrito("53078")
+    carrito.agregarSkuAlCarrito("53078, 53079 ")
     // 53079
 
     // --- Paso 3: Finalizar compra desde el carrito ---
@@ -21,7 +21,7 @@ describe('Flujo completo: Carrito + Checkout con pausa manual', () => {
     // --- Paso 4: Continuar con checkout ---
     checkout.navegarAcheckout()
     checkout.completarEmailUsuario("carlos.echagarreta@corebiz.ag")
-    cy.log('Checkout listo con SKU 53078')
+    cy.log('Checkout listo con SKU 48222')
 
     // --- Paso 5: Pausa para completar el iframe manualmente ---
     cy.pause()
@@ -29,5 +29,5 @@ describe('Flujo completo: Carrito + Checkout con pausa manual', () => {
     // --- Paso 6: Finalizar pedido ---
     checkout.finalizar()
     checkout.mensajehello()
-    })
+  });
   })
