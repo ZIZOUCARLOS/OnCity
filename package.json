@@ -1,7 +1,7 @@
 {
   "devDependencies": {
     "@testing-library/cypress": "^10.1.0",
-    "cypress": "^15.1.0",
+    "cypress": "^15.6.0",
     "cypress-iframe": "^1.0.1",
     "cypress-xpath": "^2.0.1",
     "mochawesome": "^7.1.3",
